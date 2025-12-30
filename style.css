@@ -174,3 +174,86 @@ main {
     opacity: 1;
     transform: scale(1.1);
 }
+/* ============================= */
+/* RESPONSIVIDADE GLOBAL */
+/* ============================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+    header {
+        padding: 18px 25px;
+    }
+
+    .logo {
+        height: 48px;
+    }
+
+    nav ul {
+        gap: 22px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .logo {
+        height: 55px; /* um pouco maior no mobile */
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    main,
+    section {
+        padding: 20px;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+
+    .logo {
+        height: 50px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
