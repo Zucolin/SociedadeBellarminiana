@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Manifesto da Comunidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=SxwFsZQ7q0GUQec6cjQv3Vy0g770FHhEl4r0pdOMRd5UN1dGUTQyQ1Y1U1lGM1U3SlQ4TFlOWjhITS4u">Juntar-se</a></li>
+        </ul>
+    </nav>
+
+    <div class="logo">
+        <img src="img/logo.png" alt="Brasão da Comunidade">
+    </div>
+</header>
+
+<main class="pagina-texto">
+
+    <a href="index.html" class="voltar">← Voltar</a>
+
+    <h1>Manifesto da Comunidade</h1>
+
+    <!-- TEXTO BRUTO (PRESERVA QUEBRAS) -->
+    <pre id="texto-bruto">
+
+
+
+Salve Maria.
+
+Venho, por meio deste, apresentar algumas reflexões e
+esclarecimentos acerca de atitudes que se afastam da paz e dos bons costumes no
+meio católico, por parte de alguns membros sedecantistas, uma preocupante
+recorrência ao uso de linguagem violenta, agressiva e desordenada.
+
+Surge então a seguinte indagação: devemos, de imediato,
+adotar uma linguagem igualmente radical e ofensiva contra hereges, modernistas,
+muçulmanos, sionistas, maçons e outros que frequentemente atacam a Santa Fé?
+
+É inegável que a perseguição contra a verdadeira fé é real e
+intensa, pois trata-se da fé deixada por Nosso Senhor Jesus Cristo. O próprio
+Cristo nos advertiu:
+
+“Se o mundo vos odeia, sabei que
+antes odiou a mim.”
+
+(São João 15,18)
+
+Essa perseguição manifesta-se de modo claro, sobretudo por
+meio de palavras: ataques provenientes de modernistas da Nova Ordem, de adeptos
+da posição “Reconhecer e Resistir”, e até mesmo ofensas dirigidas diretamente à
+fé ou à autoridade episcopal, seja nas redes sociais, seja no convívio pessoal.
+Diante desses ataques, no calor das emoções e tomados pela euforia, muitos
+acabam respondendo com a mesma moeda — ou até de forma ainda mais agressiva.
+
+Mas é necessário perguntar com honestidade: será este o
+caminho correto?
+
+É verdade que muitos sustentam que, em defesa do sagrado e
+da Santa Fé, deve-se priorizar a proteção da doutrina. Tal zelo é, em si, justo
+e louvável. Contudo, responder com insultos, palavrões, sarcasmo ou humilhação
+não condiz com o exemplo de Nosso Senhor Jesus Cristo, pois contradiz
+diretamente a maneira como Ele respondeu ao escárnio, à injustiça e à
+blasfêmia.
+
+A fé não se defende com violência verbal, mas com verdade,
+firmeza e caridade. Quando o fiel retribui ofensas com ofensas, ele desce ao
+nível do agressor, perde a autoridade moral de seu testemunho cristão e deixa
+de agir como discípulo daquele que foi insultado, cuspido e ultrajado — e,
+ainda assim, permaneceu manso.
+
+Defender a fé não significa calar-se por covardia, mas falar
+sem ódio, sem permitir que a ira governe a língua. O domínio de si é virtude
+cristã. Vale mais aquele que reza por seus inimigos do que aquele que zomba
+deles. Quando alguém passa a agir segundo o exemplo do seu adversário, deixa de
+ser diferente dele e, por consequência, acaba por se submeter ao mesmo espírito
+que combate. A oração e a mansidão são, muitas vezes, armas muito mais eficazes
+do que palavras duras.
+
+Como bem ensina São Francisco de Sales:
+
+“Nada é tão forte quanto a
+mansidão, nada tão fraco quanto a violência.”
+
+E recorda-nos Santo Afonso Maria de Ligório:
+
+“Quem fala movido pela ira,
+mesmo dizendo verdades, peca contra a caridade.”
+
+Nesse contexto, tomemos também o exemplo luminoso de São
+Francisco de Assis, não sob a forma deturpada apresentada por certos
+modernistas — como se fosse um defensor do ecumenismo relativista ou conivente
+com heresias e pecados —, mas como verdadeiramente foi: um santo inflamado de
+amor por Cristo e de zelo pela Santa Doutrina.
+
+São Francisco foi publicamente ridicularizado por sua fé e
+por sua pobreza; foi chamado de louco e fanático. Mesmo quando zombavam de
+Cristo diante dele, não respondia com insultos, mas com silêncio, oração ou
+palavras simples. Ensinava que suportar ofensas por amor a Cristo era uma forma
+de pregação mais poderosa do que qualquer discurso eloquente.
+
+A Sagrada Escritura confirma essa postura:
+
+1 Pedro 2,23
+
+“Quando insultado, não revidava
+com insultos; quando sofria, não ameaçava, mas entregava-se àquele que julga
+com justiça.”
+
+Mateus 5,11
+
+“Bem-aventurados sois quando vos
+injuriarem e perseguirem e, mentindo, disserem todo mal contra vós por minha
+causa.”
+
+Romanos 12,17–21
+
+“Não retribuais a ninguém mal
+por mal… Não te deixes vencer pelo mal, mas vence o mal com o bem.”
+
+Provérbios 15,1
+
+“A resposta branda desvia o
+furor, mas a palavra dura suscita a ira.”
+
+Referência magisterial:
+
+Leão XIII, Encíclica *Sapientiae
+Christianae*, 10 de janeiro de 1890.
+
+Que essas verdades nos ajudem a defender a Santa Fé com
+coragem, firmeza e zelo — mas sempre com espírito cristão, para que nossas
+palavras sejam instrumento de verdade e não ocasião de escândalo.
+
+
+
+    </pre>
+
+    <span class="autor">— Autor: Vinicus Zucolin S.B</span>
+
+</main>
+
+<script>
+const pre = document.getElementById("texto-bruto");
+const texto = pre.textContent.trim();
+
+// separa parágrafos por linha em branco
+const paragrafos = texto.split(/\n\s*\n/);
+
+// remove o <pre>
+pre.remove();
+
+const container = document.createElement("div");
+
+paragrafos.forEach(p => {
+    let textoParagrafo = p.replace(/\n/g, " ");
+
+    // aspas normais "texto"
+    textoParagrafo = textoParagrafo.replace(
+        /"([^"]+)"/g,
+        '<span class="citacao">"$1"</span>'
+    );
+
+    // aspas curvas “texto”
+    textoParagrafo = textoParagrafo.replace(
+        /“([^”]+)”/g,
+        '<span class="citacao">“$1”</span>'
+    );
+
+    // aspas simples curvas ‘texto’
+    textoParagrafo = textoParagrafo.replace(
+        /‘([^’]+)’/g,
+        '<span class="citacao">‘$1’</span>'
+    );
+
+    // **texto** (asteriscos)
+    textoParagrafo = textoParagrafo.replace(
+        /\*([^*]+)\*/g,
+        '<span class="citacao">$1</span>'
+    );
+
+    const paragrafo = document.createElement("p");
+    paragrafo.innerHTML = textoParagrafo;
+    container.appendChild(paragrafo);
+});
+
+document.querySelector(".pagina-texto").insertBefore(
+    container,
+    document.querySelector(".autor")
+);
+</script>
+
+
+</body>
+</html>

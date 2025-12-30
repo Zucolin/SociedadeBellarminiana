@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+:root {
+    --cor-fundo: #f4f4f2;
+    --cor-principal: #2c2c2c;
+    --cor-destaque: #8b1e1e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Georgia", serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+}
+
+/* ===== TOPO ===== */
+
+header {
+    padding: 30px 20px 20px;
+    position: relative;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 32px; /* mais espaço entre os itens */
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.menu a {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-size: 19px; /* maior */
+    letter-spacing: 0.5px;
+    font-weight:600;
+}
+
+.menu a:hover {
+    color: var(--cor-destaque);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.logo img {
+    width: 170px; /* LOGO MAIOR */
+    height: auto;
+}
+
+/* ===== CONTEÚDO GERAL ===== */
+
+main {
+    max-width: 720px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+/* ===== LISTA DE TEXTOS ===== */
+
+.lista-textos {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.item-texto {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-size: 19px;
+    padding-bottom: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+
+.item-texto:hover {
+    color: var(--cor-destaque);
+}
+
+/* ===== PÁGINA DE TEXTO ===== */
+
+.voltar {
+    display: inline-block;
+    margin-bottom: 35px;
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--cor-destaque);
+}
+
+.voltar:hover {
+    text-decoration: underline;
+}
+
+.pagina-texto h1 {
+    font-size: 28px;
+    margin-bottom: 35px;
+    font-weight: normal;
+    color: var(--cor-principal);
+}
+
+
+.autor {
+    display: block;
+    margin-top: 55px;
+    font-size: 14px;
+    opacity: 0.75;
+    border-top: 1px solid rgba(0,0,0,0.12);
+    padding-top: 18px;
+}
+.pagina-texto p {
+    margin-bottom: 24px;
+    line-height: 1.75;
+    font-size: 17px;
+}
+.citacao {
+    color: var(--cor-destaque);
+    font-style: italic;
+}
+.header-sobre {
+    padding-bottom: 10px;
+}
+
+.logo-sobre img {
+    width: 250px; /* LOGO MAIOR APENAS NO SOBRE */
+}
+
+.pagina-sobre {
+    max-width: 650px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.pagina-sobre h1 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.pagina-sobre p {
+    margin-bottom: 26px;
+    line-height: 1.8;
+    font-size: 17px;
+}
+.importante {
+    font-weight: bold;
+    color: var(--cor-destaque);
+}
+.youtube-link {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.youtube-link img {
+    width: 128px;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.youtube-link img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
