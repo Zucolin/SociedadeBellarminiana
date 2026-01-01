@@ -46,7 +46,27 @@ header {
 .menu a:hover {
     color: var(--cor-destaque);
 }
+.menu-sobre {
+    list-style: none;
+    display: flex;
+    gap: 32px; /* mais espaço entre os itens */
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+.menu-sobre a {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 19px; /* maior */
+    letter-spacing: 0.5px;
+    font-weight:600;
+}
 
+.menu-sobre a:hover {
+    color: white;
+}
 .logo {
     display: flex;
     justify-content: center;
@@ -138,7 +158,7 @@ main {
 
 .pagina-sobre {
     max-width: 650px;
-    margin: 80px auto;
+    margin: 40px auto;
     padding: 0 20px;
     text-align: center;
 }
@@ -152,20 +172,34 @@ main {
 .pagina-sobre p {
     margin-bottom: 26px;
     line-height: 1.8;
-    font-size: 17px;
+    font-size: 18px;
+    color: white;
 }
 .importante {
+    margin-bottom: 26px;
+    line-height: 1.8;
+    font-size: 17px;
     font-weight: bold;
-    color: var(--cor-destaque);
+    color: goldenrod;
 }
-.youtube-link {
-    display: inline-block;
-    margin-top: 20px;
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;              /* espaço entre os ícones */
+    margin-top: 50px;
 }
 
+/* remove espaçamento individual */
+.youtube-link,
+.tiktok-link {
+    margin-top: 0;
+}
+
+
 .youtube-link img {
-    width: 128px;
-    height: auto;
+    height: 90px;
+    width: 120px;
     opacity: 0.8;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -174,6 +208,23 @@ main {
     opacity: 1;
     transform: scale(1.1);
 }
+
+.tiktok-link img {
+    height: 45px;
+    width: 40px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.tiktok-link img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+body.body-sobre {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+}
+
 /* Estilo padrão (Mobile) */
 body { font-size: 16px; }
 @media (max-width: 767px) {
