@@ -200,8 +200,8 @@ main {
 
 
 .youtube-link img {
-    height: 90px;
-    width: 120px;
+    height: 65px;
+    width: 65px;
     opacity: 0.8;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -242,6 +242,12 @@ body.body-sobre {
 /* Estilo padrão (Mobile) */
 body { font-size: 16px; }
 @media (max-width: 767px) {
+.youtube-link,
+.tiktok-link,
+.instagram-link {
+    padding: 14px;
+    margin-top: -40px;
+}
   ul {
     align-items: center;    /* Centraliza horizontalmente cada item */
     text-align: center;
