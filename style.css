@@ -192,8 +192,10 @@ main {
 
 /* remove espaçamento individual */
 .youtube-link,
-.tiktok-link {
-    margin-top: 0;
+.tiktok-link,
+.instagram-link {
+    padding: 25px;
+    margin-top: -20px;
 }
 
 
@@ -208,6 +210,18 @@ main {
     opacity: 1;
     transform: scale(1.1);
 }
+.instagram-link img {
+    height: 45px;
+    width: 45px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.instagram-link img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
 
 .tiktok-link img {
     height: 45px;
