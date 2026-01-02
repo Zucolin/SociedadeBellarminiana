@@ -23,7 +23,10 @@ header {
     padding: 30px 20px 20px;
     position: relative;
 }
-
+a {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
 .menu {
     list-style: none;
     display: flex;
