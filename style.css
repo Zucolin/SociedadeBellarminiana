@@ -237,10 +237,33 @@ main {
     opacity: 1;
     transform: scale(1.1);
 }
+.link-terco {
+    color: var(--cor-destaque);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-terco:hover {
+    text-decoration: underline;
+}
+
 body.body-sobre {
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
 }
+.lider {
+    color: var(--cor-texto);
+}
+
+.todos {
+    color: var(--cor-destaque);
+}
+
+.titulo-oracao {
+    font-weight: bold;
+    text-align: center;
+}
+
 
 /* Estilo padrão (Mobile) */
 body { font-size: 16px; }
